@@ -19,7 +19,7 @@ function passwordLength(){
   
 }
 
-//Gathers all other user preferences that can be stored as boolean type. 
+//Gathers all other user preferences that can be stored as boolean type and constructs an array of characters to use. 
 function checkPreferences(){
   userLower = confirm("Would you like lower case letters? Okay = Yes  Cancel = No");
   userUpper = confirm("Would you like upper case letters? Okay = Yes  Cancel = No");
