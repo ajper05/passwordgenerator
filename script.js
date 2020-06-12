@@ -1,6 +1,19 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+
+function passwordLength(){
+  userLength = prompt("How many characters? Min. 8 - Max. 128");
+  if(userLength < 8 || userLength > 126){
+    alert("Password must be a minimum of 8 characters and a maximum of 128");
+    passwordLength();
+  }
+  return userLength;
+  
+}
+
+
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
@@ -10,11 +23,6 @@ function writePassword() {
 
 }
 
-var passwordLength = prompt("How many characters? Min. 8 - Max. 128");
-var numeric = confirm("Would you like numbers present?");
-var specialCharacters = confirm("Would you like special characters added?");
-var lowerCase = confirm ("Would you like lower case letters?");
-var upperCase = confirm ("Would you like upper case letters?");
 
 
 // Add event listener to generate button
