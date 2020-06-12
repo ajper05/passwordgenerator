@@ -26,19 +26,19 @@ function checkPreferences(){
   userNumeric = confirm("Would you like to have numbers? Okay = Yes  Cancel = No");
   userSpecial = confirm("Would you like special characters? Okay = Yes  Cancel = No");
 
-  if (userLower = true){
+  if (userLower === true){
     passwordResult = passwordResult.concat(lowerList)
   }
 
-  if (userUpper = true){
+  if (userUpper === true){
     passwordResult = passwordResult.concat(upperList)
   }
   
-  if (userNumeric = true){
+  if (userNumeric === true){
     passwordResult = passwordResult.concat(numberList)
   }
 
-  if (userSpecial = true){
+  if (userSpecial === true){
     passwordResult = passwordResult.concat(specialList)
   }
   return passwordResult;
